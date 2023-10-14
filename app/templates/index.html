@@ -12,10 +12,11 @@
 .my_custom_table td {
   text-align: left;
   padding: 4px;
+  background-color: #8EEE8E;
   width: 200px;
 }
 
-.fit-input {
+.fit_input {
   width: 100%;
   box-sizing: border-box;
 }
@@ -23,33 +24,35 @@
 </style>
 </head>
 <body style="text-align: center;">
+  <h1>Machine Learning - Guess The Type Of Music</h1>
+  <img src="../static/logo.png" width="300" style="margin-top:60px; margin-bottom:60px;">
 
   <form method="POST">
     <table class="my_custom_table" border=1>
       <tr>
         <td colspan="2">Age</td>
-        <td colspan="2"><input type="number" name="age" min="1" max="99" class="fit-input"></td>
+        <td colspan="2"><input type="number" name="age" min="1" max="99" class="fit_input"></td>
       </tr>
       <tr>
         <td colspan="2">Gender (0 for male, 1 for female)</td>
-        <td colspan="2"><input type="number" name="gender" min="0" max="1" class="fit-input"></td>
+        <td colspan="2"><input type="number" name="gender" min="0" max="1" class="fit_input"></td>
       </tr>
       <tr>
-        <td colspan="2">(1 for diploma, 2 for degree, 3 for master, 4 for phd)</td>
-        <td colspan="2"><input type="number" name="gender" min="1" max="4" class="fit-input"></td>
+        <td colspan="2">Academic Qualification (1 for diploma, 2 for degree, 3 for master, 4 for phd)</td>
+        <td colspan="2"><input type="number" name="gender" min="1" max="4" class="fit_input"></td>
       </tr>
       <tr>
         <td colspan="2">Press the button to submit</td>
         <td colspan="2"><center><input type="submit"></center></td>
       </tr>
       <tr>
-        <td colspan="4"><center>The Result</center></td>
+        <td colspan="4" style="background-color:#7F807F; color:white"><center>The Result</center></td>
       </tr>
       <tr>
-        <td colspan="4">{{ href2 }}</td>
+        <td colspan="4" style="background-color:#D2D2D1;">{{ href2 }}</td>
       </tr>
       <tr>
-        <td colspan="4">{{ href3 }}</td>
+        <td colspan="4" style="background-color:#D2D2D1;">{{ href3 }}</td>
       </tr>
     </table>
 </form>
