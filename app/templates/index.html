@@ -1,20 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.my_custom_table {
+  font-family: arial, sans-serif;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-<center>
+.my_custom_table td {
+  text-align: left;
+  padding: 4px;
+  width: 200px;
+}
+
+.fit-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+</style>
+</head>
+<body style="text-align: center;">
+
   <form method="POST">
-     <br />
-     
-     <br />
-      <label>Insert your age (1-99): </label>
-      <input type="number" name="age" min="1" max="99">
-      <br />
-      <label>Insert your gender (0 for male, 1 for female): </label>
-      <input type="number" name="gender" min="0" max="1">
-      <br />
-      <label>Insert your academic-qualification (1 for diploma, 2 for degree, 3 for master, 4 for phd): </label>
-      <input type="number" name="gender" min="1" max="4">
-      <input type="submit">
-      <br />
-      <br /><br />
-      <label>{{ href2 }} </label>
-  </form>
-</center>
+    <table class="my_custom_table" border=1>
+      <tr>
+        <td colspan="2">Age</td>
+        <td colspan="2"><input type="number" name="age" min="1" max="99" class="fit-input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Gender (0 for male, 1 for female)</td>
+        <td colspan="2"><input type="number" name="gender" min="0" max="1" class="fit-input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">(1 for diploma, 2 for degree, 3 for master, 4 for phd)</td>
+        <td colspan="2"><input type="number" name="gender" min="1" max="4" class="fit-input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Press the button to submit</td>
+        <td colspan="2"><center><input type="submit"></center></td>
+      </tr>
+      <tr>
+        <td colspan="4"><center>The Result</center></td>
+      </tr>
+      <tr>
+        <td colspan="4">{{ href2 }}</td>
+      </tr>
+      <tr>
+        <td colspan="4">{{ href3 }}</td>
+      </tr>
+    </table>
+</form>
+
+</body>
+</html>
