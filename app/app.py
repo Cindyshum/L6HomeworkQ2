@@ -25,7 +25,7 @@ def hello_world():
                                href2=
                                'The suitable music for you (age:'+str(myage)+
                                ' ,gender:'+str(mygender)+
-                               # ' ,academic-qualification:' +str(myacademic)+
-                               ' )is: ',
+                               ' ,academic-qualification:' +str(myacademic)+
+                               ') is: ',
                                href3=predictions_to_str
                             )
