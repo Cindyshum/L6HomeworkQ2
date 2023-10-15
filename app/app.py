@@ -29,4 +29,4 @@ def hello_world():
         #                        ' )is: ',
         #                        href3=predictions_to_str
         #                     )
-        return render_template('index.html', href2='test href2', href2='test href3')
+        return render_template('index.html', href2='test href2', href3='test href3')
