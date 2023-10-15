@@ -15,8 +15,7 @@ def hello_world():
         myage = request.form['age']
         mygender = request.form['gender']
         myacademic = request.form['academic']
-        # model = load('app/music-recommender.joblib')
-        model = load('app/bread-recommender.joblib')  
+        model = load('app/music-recommender.joblib')
         np_arr = np.array([myage, mygender, myacademic])
         # np_arr = [myage, mygender, myacademic]
         predictions = model.predict([np_arr])  
