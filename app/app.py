@@ -15,7 +15,8 @@ def hello_world():
         myage = request.form['age']
         mygender = request.form['gender']
         myacademic = request.form['academic']
-        model = load('app/music-recommender.joblib')
+        # model = load('app/music-recommender.joblib')
+        model = load('app/bread-recommender.joblib')  
         np_arr = np.array([myage, mygender, myacademic])
         # np_arr = [myage, mygender, myacademic]
         predictions = model.predict([np_arr])  
@@ -25,7 +26,7 @@ def hello_world():
                                href2=
                                'The suitable music for you (age:'+str(myage)+
                                ' ,gender:'+str(mygender)+
-                               ' ,academic-qualification:' +str(myacademic)+
+                               # ' ,academic-qualification:' +str(myacademic)+
                                ' )is: ',
                                href3=predictions_to_str
                             )
